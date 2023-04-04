@@ -31,8 +31,11 @@ It is easy to notice that the program starts giving incorrect output on line 22.
 Thus, mutexes help to prevent the output of information about the results of both event functions at the same time, i.e., with the help of this technology, the program works correctly: timely output of all correct function results to the screen.
 
 Let's check the correctness of the program's operation using input via a file 
+
 ![Снимок экрана 2022-12-16 в 22 45 15](https://user-images.githubusercontent.com/75154790/208177055-df3df3db-5e25-4ead-b075-44ccb9c39741.png)  
+
 or a randomly generated number, respectively:
+
 ![Снимок экрана 2022-12-16 в 22 52 17](https://user-images.githubusercontent.com/75154790/208178229-69484bd3-fd1d-4483-82d6-398e615a7f8a.png)
 
 
