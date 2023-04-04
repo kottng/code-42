@@ -21,16 +21,18 @@ Streams can be associated with files of a special type - channels. A channel is 
 # Program testing:
 The program works correctly: all the output of the function is clear and understandable, and no errors occur, here are the results:
 
-Снимок экрана 2022-12-16 в 20 58 20
+![Снимок экрана 2022-12-16 в 20 58 20](https://user-images.githubusercontent.com/75154790/208159902-79f31797-7ae1-481e-a7e9-e120fcf8536c.png)
 
 Let's conduct an experiment to see what will happen if we remove the separation of threads using mutexes in the program, here are the results:
-Снимок экрана 2022-12-16 в 21 43 52
 
+![Снимок экрана 2022-12-16 в 21 43 52](https://user-images.githubusercontent.com/75154790/208167307-a566ddeb-3948-4a9a-8cc8-70da74189178.png) 
 It is easy to notice that the program starts giving incorrect output on line 22.
 
 Thus, mutexes help to prevent the output of information about the results of both event functions at the same time, i.e., with the help of this technology, the program works correctly: timely output of all correct function results to the screen.
 
-Let's check the correctness of the program's operation using input via a file or a randomly generated number, respectively:
-Снимок экрана 2022-12-16 в 22 45 15
+Let's check the correctness of the program's operation using input via a file 
+![Снимок экрана 2022-12-16 в 22 45 15](https://user-images.githubusercontent.com/75154790/208177055-df3df3db-5e25-4ead-b075-44ccb9c39741.png)  
+or a randomly generated number, respectively:
+![Снимок экрана 2022-12-16 в 22 52 17](https://user-images.githubusercontent.com/75154790/208178229-69484bd3-fd1d-4483-82d6-398e615a7f8a.png)
 
-Снимок экрана 2022-12-16 в 22 52 17
+
