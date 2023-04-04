@@ -26,6 +26,7 @@ The program works correctly: all the output of the function is clear and underst
 Let's conduct an experiment to see what will happen if we remove the separation of threads using mutexes in the program, here are the results:
 
 ![Снимок экрана 2022-12-16 в 21 43 52](https://user-images.githubusercontent.com/75154790/208167307-a566ddeb-3948-4a9a-8cc8-70da74189178.png) 
+  
 It is easy to notice that the program starts giving incorrect output on line 22.
 
 Thus, mutexes help to prevent the output of information about the results of both event functions at the same time, i.e., with the help of this technology, the program works correctly: timely output of all correct function results to the screen.
