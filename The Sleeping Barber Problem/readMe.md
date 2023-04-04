@@ -17,3 +17,20 @@ Streams can be associated with files of a special type - channels. A channel is 
 * Several functions are implemented, including the function of creating events "visitor arrived", "barber started cutting visitor", as well as functions for random number generation, and outputting the results of the event creation functions to the screen.
 * Two data threads are implemented, which are connected to each other thanks to two mutexes (binary semaphores), and the paradigm of unequal threads is implemented: "Producers and Consumers." One thread produces, the other consumes.
 * Parallel computing model: Threads are linked to each other using a FIFO queue (in_line). We create mutexes (binary semaphores), through which we differentiate the program's output so that two threads do not have access to the output at the same time (the result without introducing mutexes is shown in the program testing).
+
+# Program testing:
+The program works correctly: all the output of the function is clear and understandable, and no errors occur, here are the results:
+
+Снимок экрана 2022-12-16 в 20 58 20
+
+Let's conduct an experiment to see what will happen if we remove the separation of threads using mutexes in the program, here are the results:
+Снимок экрана 2022-12-16 в 21 43 52
+
+It is easy to notice that the program starts giving incorrect output on line 22.
+
+Thus, mutexes help to prevent the output of information about the results of both event functions at the same time, i.e., with the help of this technology, the program works correctly: timely output of all correct function results to the screen.
+
+Let's check the correctness of the program's operation using input via a file or a randomly generated number, respectively:
+Снимок экрана 2022-12-16 в 22 45 15
+
+Снимок экрана 2022-12-16 в 22 52 17
