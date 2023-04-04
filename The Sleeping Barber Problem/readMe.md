@@ -1,4 +1,3 @@
-# ABC 4.0
 # Task:
 The Barber Shop Problem. In a quiet town, there is a small barber shop. The salon is small, and only one hairdresser can work in it, serving one visitor. There are several chairs for waiting in the queue. The hairdresser serves visitors all his life. When there is no one in the salon, he sleeps in the chair. When a visitor comes and sees the sleeping hairdresser, he wakes him up, sits in the chair, and "falls asleep" at the moment while the hairdresser serves him. If a visitor comes and the hairdresser is busy, he stands in line and "falls asleep." After cutting the hair, the hairdresser escorts the visitor himself. If there are waiting visitors, the hairdresser wakes one of them up and waits for him to sit in the hairdresser's chair and start cutting his hair. If there is no one, he sits back in his chair and falls asleep until a visitor arrives. Create a multithreaded application that models a day in a barbershop.
 
